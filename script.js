@@ -7,7 +7,11 @@ var $quotesObject = $('#quotes');
     headers: { "X-Mashape-Key": "qzwa4lx4gVmshWzgX5hbOgznXaK2p1XBRPQjsnEBhCpIknHhcG" },
     success: function(quotesObject) {
       $.each(quotesObject, function(quotesProperty){
-        $quotesObject.append('<p>' + quotesObject[quotesProperty] + '</p>');
+        if (quotesProperty === "quote") {
+        $quotesObject.append('<p id="quote">' + quotesObject[quotesProperty] + '</p>');}
+        else if (quotesProperty === "author") {
+        $quotesObject.append('<p id="author">' + quotesObject[quotesProperty] + '</p>');}
+
 
       });
     }
@@ -26,7 +30,11 @@ $('#quotes').empty();
     headers: { "X-Mashape-Key": "qzwa4lx4gVmshWzgX5hbOgznXaK2p1XBRPQjsnEBhCpIknHhcG" },
     success: function(quotesObject) {
       $.each(quotesObject, function(quotesProperty){
-        $quotesObject.append('<p>' + quotesObject[quotesProperty] + '</p>');
+        if (quotesProperty === "quote") {
+        $quotesObject.append('<p id="quote">' + quotesObject[quotesProperty] + '</p>');}
+        else if (quotesProperty === "author") {
+        $quotesObject.append('<p id="author">' + quotesObject[quotesProperty] + '</p>');}
+
 
       });
     }

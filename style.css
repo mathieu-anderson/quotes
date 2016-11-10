@@ -1,0 +1,28 @@
+html {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 8%;
+}
+
+#quotes{
+  background-color: #d1d3d6;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 300px;
+}
+
+#quote{
+  vertical-align: middle;
+  font-size: 2em;
+}
+
+#author{
+  vertical-align: middle;
+  text-align: right;
+}
+
+#button{
+  margin-top: 20px;
+}
